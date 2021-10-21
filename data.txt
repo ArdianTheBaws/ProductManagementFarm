@@ -1,0 +1,9 @@
+Traktor,John Deere 5100R
+Traktor,International 856 XL Turbo
+Husdyr,Katt
+Husdyr,Hund
+Dyr,Kyr
+Dyr,Hest
+Råvarer,Potet
+Dyr,Tomat
+Dyr,Katt

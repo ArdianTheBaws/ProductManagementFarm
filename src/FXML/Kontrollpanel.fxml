@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="569.0" prefWidth="943.0" stylesheets="@../app/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.KontrollpanelController">
+   <center>
+      <AnchorPane prefHeight="569.0" prefWidth="943.0" styleClass="bakgrunn" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="187.0" layoutY="50.0" text="KONTROLLPANEL" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <ScrollPane layoutX="190.0" layoutY="198.0" prefHeight="256.0" prefWidth="384.0">
+               <content>
+                  <TableView fx:id="dataTable" onMouseClicked="#tabellKlikkAction" prefHeight="253.0" prefWidth="382.0">
+                     <columns>
+                        <TableColumn fx:id="kategoriCol" prefWidth="186.6666921377182" text="Kategori" />
+                        <TableColumn fx:id="navnCol" prefWidth="181.99989318847656" text="Produktnavn" />
+                     </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+            <RadioButton fx:id="radioKategori" layoutX="292.0" layoutY="113.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="102.0" selected="true" text="Kategori" textFill="WHITE">
+               <toggleGroup>
+                  <ToggleGroup fx:id="radiogroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="radioNavn" layoutX="472.0" layoutY="113.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="102.0" text="Navn" textFill="WHITE" toggleGroup="$radiogroup" />
+            <Label layoutX="189.0" layoutY="113.0" prefHeight="17.0" prefWidth="44.0" text="Sorter" textFill="WHITE" />
+            <TextField fx:id="txtSearch" layoutX="189.0" layoutY="152.0" onKeyTyped="#KlikkAction" prefHeight="31.0" prefWidth="386.0" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="678.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMG/harvest.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

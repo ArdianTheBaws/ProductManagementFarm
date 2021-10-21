@@ -1,0 +1,17 @@
+.mainPane{
+	-fx-background-color: #C2EABD;
+	-fx-border-color:black;
+	-fx-border-radius: 18 18 18 18;
+	-fx-background-radius:  18 18 18 18;
+}
+.meny{
+	-fx-border-radius: 18 0 0 18;
+	-fx-border-color:black;
+}
+.bakgrunn{
+	-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, lightblue, C2EABD	);
+
+}
+.button{
+	-fx-background-color: #A31621;
+}

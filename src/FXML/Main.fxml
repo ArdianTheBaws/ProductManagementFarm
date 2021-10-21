@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="1202.0" styleClass="bakgrunn" stylesheets="@../app/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <left>
+      <VBox prefHeight="594.0" prefWidth="145.0" spacing="30.0" styleClass="bakgrunn" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="DashboardButton" onAction="#KontrollPanelAction" prefHeight="35.0" prefWidth="177.0" ripplerFill="WHITE" styleClass="menubar" stylesheets="@../app/style.css" text="KONTROLLPANEL" textFill="GOLD">
+               <graphic>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="AddDataButton" onAction="#AddDataAction" prefHeight="35.0" prefWidth="177.0" styleClass="menubar" text="LEGG TIL PRODUKT" textFill="GOLD">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+               </graphic>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets top="30.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <Pane prefHeight="526.0" prefWidth="1057.0" styleClass="bakgrunn" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <HBox alignment="CENTER" prefHeight="87.0" prefWidth="1202.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="168.0" fitWidth="98.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMG/farmer.png" />
+               </image>
+            </ImageView>
+            <JFXTextArea editable="false" prefHeight="78.0" prefWidth="189.0" text="Met's Gård">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXTextArea>
+            <ImageView fitHeight="113.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMG/barn.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
